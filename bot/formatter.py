@@ -52,14 +52,14 @@ def format_card_ru(o: Dict[str, Any], cities_map: Dict[str,str], airlines_map: D
         ticket_link = simple_search_link(origin_code, depart_date, dest, price_val=p.get("value"), currency=curr)
 
     lines = [
-        f"✈️  {dest_name} ({dest})",
-        f"**{airline_name}**" if airline_name else None,
-        f"💰 {compact} (вместо {old_compact})",
-        f"📅 {depart_display}" if depart_display else None,
-        f"⏰ {depart_time or '??:??'} {origin_code} → {arrival_time or '??:??'} {dest}" if depart_time or arrival_time else None,
-        f"🕒 {duration} / {stops_str}",
+        f"✈️ **{dest_name} ({dest})**",
+        f"🛫 Airline: *{airline_name}*" if airline_name else None,
+        f"💰 Price: **{current_price}**" + (f" _(was {old_price})_" if old_price else ""),
+        f"📅 Date: {depart_display}" if depart_display else None,
+        f"⏰ Time: {depart_time or '??:??'} {origin_code} → {arrival_time or '??:??'} {dest}" if depart_time or arrival_time else None,
+        f"🕒 Duration: {duration} / {stops_str}",
         "",
-        f"[Подробнее и билеты >]({ticket_link}) "
+        f"[Подробнее и билеты >]({ticket_link})"
     ]
 
     return "\n".join(filter(None, lines))
