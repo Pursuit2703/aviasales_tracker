@@ -86,18 +86,22 @@ python main.py
 ## Code Structure
 
 ```
-bot/
-├── __init__.py            # Marks the folder as a Python package
-├── bot.py                 # Main bot instance and signal handling
-├── fetcher.py             # API requests to AviaSales, parsing offers
-├── formatter.py           # Formatting flight info for messages
-├── scheduler.py           # Background scheduler for subscriptions and alerts
-├── alerts.py              # Alert checking and notifications
-├── db.py                  # SQLite database functions
-├── state.py               # In-memory session cache
-├── utils.py               # Helper functions (date formatting, price formatting, links)
-```
-
+.
+├── bot
+│   ├── alerts.py
+│   ├── bot.py
+│   ├── db.py
+│   ├── fetcher.py
+│   ├── formatter.py
+│   ├── handlers.py
+│   ├── __init__.py
+│   ├── scheduler.py
+│   ├── state.py
+│   └── utils.py
+├── LICENSE
+├── main.py
+├── README.md
+└── requirements.txt
 ---
 
 ## Notes
