@@ -25,10 +25,11 @@ cd aviasales_tracker
 
 2. Create and activate a virtual environment:
 
-```bash
-python -m venv .venv
-source .venv/bin/activate
-```
+| Platform             | Command                                                  |
+| -------------------- | -------------------------------------------------------- |
+| Linux / macOS        | `python3 -m venv .venv` <br> `source .venv/bin/activate` |
+| Windows (cmd)        | `python -m venv .venv` <br> `.venv\Scripts\activate.bat` |
+| Windows (PowerShell) | `python -m venv .venv` <br> `.venv\Scripts\Activate.ps1` |
 
 3. Install dependencies:
 
@@ -38,9 +39,11 @@ pip install -r requirements.txt
 
 4. Set your Telegram bot token:
 
-```bash
-export TELEGRAM_TOKEN="YOUR_BOT_TOKEN"
-```
+| Platform             | Command                                  |
+| -------------------- | ---------------------------------------- |
+| Linux / macOS        | `export TELEGRAM_TOKEN="YOUR_BOT_TOKEN"` |
+| Windows (cmd)        | `set TELEGRAM_TOKEN=YOUR_BOT_TOKEN`      |
+| Windows (PowerShell) | `$env:TELEGRAM_TOKEN="YOUR_BOT_TOKEN"`   |
 
 ---
 
