@@ -19,7 +19,7 @@ A Telegram bot that tracks flight deals and price alerts for AviaSales, sends da
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/Pursuit/aviasales_tracker.git
+git clone https://github.com/Pursuit2703/aviasales_tracker.git
 cd aviasales_tracker
 ```
 
