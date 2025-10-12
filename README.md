@@ -61,10 +61,11 @@ Database is automatically initialized on first run.
 ## Commands
 
 * `/deals ORIGIN` – Show the best current deals from a city.
+* `/cities` – List available cities.
 * `/subscribe ORIGIN HH MM` – Subscribe to daily deals at `HH:MM` from `ORIGIN`.
 * `/alert ORIGIN DESTINATION [PRICE]` – Set a price alert for a flight.
-* `/alerts` – List your active alerts.
-* `/unsubscribe ORIGIN` – Remove a subscription.
+* `/myalerts` – List your active alerts.
+* `/unsubscribe` – Remove a subscription.
 * `/help` – Show help text.
 
 ---
