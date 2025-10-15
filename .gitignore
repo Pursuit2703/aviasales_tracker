@@ -33,3 +33,6 @@ Thumbs.db
 # Python virtual environment
 .venv/
 env/
+
+# VS Code Workspace files
+*.code-workspace
