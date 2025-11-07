@@ -42,7 +42,7 @@ pip install -r requirements.txt
 | Platform             | Command                                  |
 | -------------------- | ---------------------------------------- |
 | Linux / macOS        | `export TELEGRAM_TOKEN="YOUR_BOT_TOKEN"` |
-| Windows (cmd)        | `set TELEGRAM_TOKEN=YOUR_BOT_TOKEN`      |
+| Windows (cmd)        | `set TELEGRAM_TOKEN="YOUR_BOT_TOKEN"`      |
 | Windows (PowerShell) | `$env:TELEGRAM_TOKEN="YOUR_BOT_TOKEN"`   |
 
 ---
